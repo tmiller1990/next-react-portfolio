@@ -1,0 +1,60 @@
+import PortfolioCard from "@/components/PortfolioCard";
+import React from "react";
+import {Rocket, FileStack} from 'lucide-react';
+
+const projects = [
+    {
+        title: "This Portfolio Page",
+        screenshot: "/images/portfolio/first-project.png",
+        blurb: "\"Wherever you go, there you are.\" I built this portfolio page with Next.js and React utilizing some Tailwind theming and some nifty React components.",
+        blurbSourceLinkText: (
+            <>
+            <FileStack className="w-5 h-5 mr-1" />See the Source
+            </>
+        ),
+        blurbSourceLinkUrl: "#home",
+        blurbDemoLinkText: "",
+        blurbDemoLinkUrl: "#contact",
+    },
+    {
+        title: "Second Project",
+        screenshot: "/images/portfolio/second-project.png",
+        blurb: "Second project blurb, this one is longer to see how the formatting looks with a realistic amount of rambling.",
+        blurbSourceLinkText: "",
+        blurbSourceLinkUrl: "",
+        blurbDemoLinkText: (
+            <>
+                <Rocket className="w-5 h-5 mr-1" />Demo (in a new tab)
+            </>
+        ),
+        blurbDemoLinkUrl: "/",
+    },
+    {
+        title: "Third Project",
+        screenshot: "/images/portfolio/third-project.png",
+        blurb: "Third project blurb",
+        blurbSourceLinkText: "",
+        blurbSourceLinkUrl: "",
+        blurbDemoLinkText: "",
+        blurbDemoLinkUrl: "",
+    },
+]
+
+const Portfolio = () => (
+
+
+
+        <section id="portfolio"
+                 className=" flex flex-col items-center justify-center  p-8 mb-12">
+            <h1 className="text-2xl md:text-3xl font-bold text-theme-content mb-2">Portfolio of Projects</h1>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl">
+                {projects.map((project, index) => (
+                    <PortfolioCard key={index} {...project} />
+                ))}
+            </div>
+        </section>
+
+
+);
+
+export default Portfolio;
