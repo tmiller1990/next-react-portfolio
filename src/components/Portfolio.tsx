@@ -12,21 +12,21 @@ const projects = [
             <FileStack className="w-5 h-5 mr-1" />See the Source
             </>
         ),
-        blurbSourceLinkUrl: "#home",
+        blurbSourceLinkUrl: "/",
         blurbDemoLinkText: "",
-        blurbDemoLinkUrl: "#contact",
+        blurbDemoLinkUrl: "",
     },
     {
-        title: "Second Project",
+        title: "Machine Learning: Ames Housing Regression",
         screenshot: "/images/portfolio/second-project.png",
-        blurb: "Second project blurb, this one is longer to see how the formatting looks with a realistic amount of rambling.",
-        blurbSourceLinkText: "",
-        blurbSourceLinkUrl: "",
-        blurbDemoLinkText: (
+        blurb: "A python project using Pandas and Scikit-learn to build an optimized Gradient Boosting Regressor model to predict the sales price of homes. ",
+        blurbSourceLinkText: (
             <>
-                <Rocket className="w-5 h-5 mr-1" />Demo (in a new tab)
+                <FileStack className="w-5 h-5 mr-1" />See the Source
             </>
         ),
+        blurbSourceLinkUrl: "https://github.com/tmiller1990/ames-housing-regression",
+        blurbDemoLinkText: "",
         blurbDemoLinkUrl: "/",
     },
     {
