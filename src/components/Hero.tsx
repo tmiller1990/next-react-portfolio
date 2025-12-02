@@ -24,7 +24,7 @@ const Hero = () => {
                 <TypingEffect text="Developer | Tinkerer | Maker "/>
 
                 <p className="text-sm text-theme-content/80 mt-4 max-w-xl">
-                    I'm a Denver-based developer and Computer Science student graduating in February of 2027. I like
+                    I'm a Denver-based developer and Computer Science student graduating in February of 2026. I like
                     to build new things, and I thrive when I have a challenging problem to solve. Check out my portfolio
                     of projects below, and drop me a line if you'd like to chat.
                 </p>

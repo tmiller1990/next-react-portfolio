@@ -32,7 +32,7 @@ const projects = [
     {
         title: "Java Calculator",
         screenshot: "/images/portfolio/third-project.png",
-        blurb: "A simple GUI calculator application written in Java with JavaFX and Maven ",
+        blurb: "A simple GUI calculator application written in Java with JavaFX and Maven. ",
         blurbSourceLinkText: (
             <>
                 <FileStack className="w-5 h-5 mr-1" />See the Source
