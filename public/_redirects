@@ -1,3 +1,5 @@
 # Redirect all traffic from the root domain to the subdomain
 http://lermiller.com/* https://Ty.lerMiller.com/:splat 301!
 https://lermiller.com/* https://Ty.lerMiller.com/:splat 301!
+# Bring the SpecFlow demo over to the main url
+/SpecFlow/* https://specflow-demo.netlify.app/:splat  200
