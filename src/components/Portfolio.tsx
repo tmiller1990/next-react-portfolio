@@ -69,7 +69,7 @@ const Portfolio = () => (
         <section id="portfolio"
                  className=" flex flex-col items-center justify-center  p-8 mb-12">
             <h1 className="text-2xl md:text-3xl font-bold text-theme-content mb-2">Portfolio of Projects</h1>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mx-auto max-w-7xl">
                 {projects.map((project, index) => (
                     <PortfolioCard key={index} {...project} />
                 ))}
