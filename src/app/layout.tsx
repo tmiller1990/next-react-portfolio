@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google'; // 1. Import the font loader
+import { Inter } from 'next/font/google'; // Import the font loader
 
-// 2. Configure the font (e.g., using 'Inter' as the site font)
+// Configure the font
 const inter = Inter({
     subsets: ['latin'],
-    variable: '--font-inter', // 3. Assign a CSS variable name
+    variable: '--font-inter', // Assign a CSS variable name
 });
 
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-pt-[72px] scroll-smooth">
       <body
         className={"inter.variable bg-theme-base antialiased"}
       >
