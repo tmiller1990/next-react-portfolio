@@ -22,6 +22,19 @@ const projects = [
     },
 
     {
+        title: "Spring Boot API Vacation Booking System (School Project)",
+        screenshot: "/images/portfolio/fifth-project.png",
+        blurb: "For this school project I implemented the core business logic, API endpoints, and data validation required to handle a multi-entity booking system.",
+        blurbSourceLinkText: (
+            <>
+                <FileStack className="w-5 h-5 mr-1" />See the Source (Request Access to Private Repo)
+            </>
+        ),
+        blurbSourceLinkUrl: "https://github.com/tmiller1990/WGU-D288-Back-End-Programming/pull/1",
+
+    },
+
+    {
         title: "This Portfolio Page",
         screenshot: "/images/portfolio/first-project.png",
         blurb: "\"Wherever you go, there you are.\" I built this portfolio page with Next.js and React utilizing some Tailwind theming and some nifty React components.",
