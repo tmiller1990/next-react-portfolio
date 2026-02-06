@@ -2,8 +2,16 @@
 import React from "react";
 import Image from "next/image";
 import TypingEffect from "@/components/TypingEffect";
-
+import WordMorph from "@/components/WordMorph";
 const Hero = () => {
+    const roles = [
+        "Full Stack Developer",
+        "Fresh BSCS Grad",
+        "AI/ML Tinkerer",
+        "Career Switcher",
+        ""
+    ];
+
     return (
 
         <section id="home"
@@ -21,10 +29,10 @@ const Hero = () => {
             <div className="text-center md:text-left">
                 <h1 className="text-2xl md:text-3xl font-bold text-theme-content mb-2">Hello, I'm Tyler!</h1>
 
-                <TypingEffect text="Developer | Tinkerer | Maker "/>
-
+                {/*<TypingEffect text="Developer | Tinkerer | Maker "/>*/}
+                <WordMorph phrases={roles} />
                 <p className="text-sm text-theme-content/80 mt-4 max-w-xl">
-                    I'm a Denver-based developer and new BS in Computer Science graduate (Jan 2026). I like
+                    I'm a Denver-based developer and new BS Computer Science graduate (Jan 2026). I like
                     to build new things, and I thrive when I have a challenging problem to solve. Check out my portfolio
                     of projects below, and drop me a line if you'd like to chat.
                 </p>
