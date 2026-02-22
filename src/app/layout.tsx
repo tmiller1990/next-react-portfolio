@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google'; // Import the font loader
+import { Inter } from 'next/font/google';
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 // Configure the font
 const inter = Inter({
     subsets: ['latin'],
-    variable: '--font-inter', // Assign a CSS variable name
+    variable: '--font-inter',
 });
 
 
@@ -22,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-pt-[72px] scroll-smooth">
       <body
-        className={"inter.variable bg-theme-base antialiased"}
+        className={`${inter.variable} bg-theme-base antialiased`}
       >
-      <div className="max-w-3xl mx-auto">
-        {children}
-      </div>
+        <ThemeProvider>
+          <div className="max-w-3xl mx-auto">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,12 +1,20 @@
 @import "tailwindcss";
 
-
-
-@theme{
-    /* 24: High Contrast & Green Accent */
+@theme {
+    /* Dark Mode: High Contrast & Green Accent */
     --color-theme-one: oklch(0.2186 0.0039 286.08);
     --color-theme-two: oklch(0.5465 0.2455 262.87);
     --color-theme-three: oklch(0.2186 0.0039 286.08);
     --color-theme-base: oklch(0.2011 0.0039 286.04);
     --color-theme-content: oklch(0.9881 0 0);
 }
+
+/* Light Mode Styles */
+:root.light {
+    --color-theme-one: oklch(0.9 0.01 286.08);
+    --color-theme-two: oklch(0.5465 0.2455 262.87);
+    --color-theme-three: oklch(0.95 0.005 286.08);
+    --color-theme-base: oklch(0.97 0.001 286.04);
+    --color-theme-content: oklch(0.2 0.01 286.08);
+}
+
