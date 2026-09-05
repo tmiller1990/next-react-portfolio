@@ -5,10 +5,10 @@ import TypingEffect from "@/components/TypingEffect";
 import WordMorph from "@/components/WordMorph";
 const Hero = () => {
     const roles = [
-        "is a QA Specialist",
-        "got a BSCS in 2026",
-        "is an AI/ML Tinkerer",
-        "has a cool dog",
+        "A QA Specialist",
+        "Got a BSCS in 2026",
+        "Is an AI/ML Tinkerer",
+        "Has a cool dog",
         ""
     ];
 
