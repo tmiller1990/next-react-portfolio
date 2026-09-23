@@ -32,7 +32,7 @@ const Hero = () => {
                 {/*<TypingEffect text="Developer | Tinkerer | Maker "/>*/}
                 <WordMorph phrases={roles} />
                 <p className="text-sm text-theme-content/80 mt-4 max-w-xl">
-                    I'm a Denver-based developer and new BS Computer Science graduate (Jan 2026). I like
+                    I'm a Denver-based technologist and a QA Specialist at <a href="https://www.mersive.com/" target="_blank" rel="noopener noreferrer">mersive</a>. I like
                     to build new things, and I thrive when I have a challenging problem to solve. Check out my portfolio
                     of projects below, and drop me a line if you'd like to chat.
                 </p>
